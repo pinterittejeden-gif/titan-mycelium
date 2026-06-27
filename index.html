@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROJECT: TITAN-MYCELIUM</title>
+    <title>PROJECT: TITAN-MYCELIUM DOSSIER</title>
     <style>
         :root {
-            --bg-color: #0d0e12;
-            --panel-bg: #161821;
+            --bg-color: #0b0c10;
+            --panel-bg: #11141a;
             --accent-color: #00ffaa;
             --text-color: #c9d1d9;
             --text-dim: #8b949e;
+            --border-color: #21262d;
         }
 
         body {
@@ -24,20 +25,20 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 900px;
             width: 100%;
         }
 
         header {
             border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 10px;
+            padding-bottom: 15px;
             margin-bottom: 30px;
         }
 
         h1 {
             color: var(--accent-color);
             margin: 0;
-            font-size: 1.8rem;
+            font-size: 2rem;
             letter-spacing: 2px;
         }
 
@@ -49,17 +50,17 @@
 
         .panel {
             background-color: var(--panel-bg);
-            border: 1px solid #21262d;
+            border: 1px solid var(--border-color);
             border-radius: 6px;
-            padding: 20px;
-            margin-bottom: 20px;
+            padding: 25px;
+            margin-bottom: 25px;
         }
 
         h2 {
             color: var(--accent-color);
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             margin-top: 0;
-            border-bottom: 1px dashed #21262d;
+            border-bottom: 1px dashed var(--border-color);
             padding-bottom: 5px;
         }
 
@@ -68,12 +69,53 @@
             font-size: 0.95rem;
         }
 
-        ul {
-            padding-left: 20px;
+        .module-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+            margin-top: 20px;
         }
 
-        li {
-            margin-bottom: 10px;
+        @media (min-width: 768px) {
+            .module-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .module-card {
+            background: #161b22;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .module-img-container {
+            background: #0d1117;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .module-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            border: 1px solid #30363d;
+        }
+
+        .module-info {
+            padding: 15px;
+            flex-grow: 1;
+        }
+
+        .module-info h3 {
+            color: var(--accent-color);
+            margin-top: 0;
+            font-size: 1.05rem;
         }
 
         .highlight {
@@ -81,22 +123,14 @@
             font-weight: bold;
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-            font-size: 0.9rem;
-        }
-
-        th, td {
-            border: 1px solid #21262d;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #21262d;
-            color: var(--accent-color);
+        .terminal-log {
+            background-color: #000000;
+            border: 1px solid var(--accent-color);
+            padding: 15px;
+            font-size: 0.85rem;
+            color: #00ff66;
+            border-radius: 4px;
+            overflow-x: auto;
         }
 
         footer {
@@ -104,8 +138,8 @@
             margin-top: 40px;
             font-size: 0.8rem;
             color: var(--text-dim);
-            border-top: 1px solid #21262d;
-            padding-top: 10px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 15px;
         }
     </style>
 </head>
@@ -114,59 +148,75 @@
 <div class="container">
     <header>
         <h1>PROJECT: TITAN-MYCELIUM</h1>
-        <div class="status-bar">CLASSIFIED // STRAIN: PO-X1 // HOST: P. OSTREATUS // STATUS: ACTIVE</div>
+        <div class="status-bar">CLASSIFIED DOSSIER // STRAIN: PO-X1 // LIVE INTERFACE</div>
     </header>
 
     <div class="panel">
-        <h2>OVERVIEW</h2>
-        <p>Project <span class="highlight">Titan-Mycelium</span> is a synthetic biology initiative aimed at engineering a living, predatory biomaterial capable of active structural defense and autonomous self-healing. By utilizing the fast-growing matrix of <i>Pleurotus ostreatus</i>, we have developed an organic composite that hunts structural pests while generating military-grade compressive strength.</p>
+        <h2>RECONSTRUCTED ARCHITECTURE OVERVIEW</h2>
+        <p>Project <span class="highlight">Titan-Mycelium</span> successfully overwrites the biological baseline of <i>Pleurotus ostreatus</i>. By utilizing targeted genetic engineering, the organism is transitioned from a standard scavenger into an autonomous, predatory structural matrix capable of defending, reinforcing, and repairing load-bearing partitions.</p>
     </div>
 
     <div class="panel">
-        <h2>GENETIC MODIFICATIONS</h2>
-        <ul>
-            <li><span class="highlight">Constitutive Predatory Activation:</span> Swapped native nutrient-sensing promoters with an aggressive, continuous promoter loop. The fungal hyphae are permanently locked into hunting mode, bypassing normal nutrient scarcity triggers.</li>
-            <li><span class="highlight">Chitin-Sclerotin Hyper-Expression:</span> Upregulated the metabolic pathways responsible for cell-wall synthesis. The resulting mycelial mats interlock with extreme density, forming a lightweight composite stronger than standard concrete.</li>
-            <li><span class="highlight">Targeted Enzymatic Payload:</span> Engineered localized secretion of high-density chitinase and protease cocktails directly at the hyphal loop tips, melting pest exoskeletons on structural contact.</li>
-        </ul>
+        <h2>SYSTEM COMPONENT BREAKDOWN</h2>
+        <div class="module-grid">
+            
+            <div class="module-card">
+                <div class="module-img-container">
+                    <img src="image_a8d679.png" alt="Sensory Overhaul SEM">
+                </div>
+                <div class="module-info">
+                    <h3>1. PATHWAY SWAP: PEST SENSING</h3>
+                    <p>The native fruit-sensing proteins are entirely replaced. The modified <span class="highlight">PO-X1</span> lineage expresses high-density pest-odorant and constricting receptors along the hyphae, locking the fungal grid into an active, permanent hunting mode.</p>
+                </div>
+            </div>
+
+            <div class="module-card">
+                <div class="module-img-container">
+                    <img src="image_a8d961.png" alt="Enzyme Release Zoom">
+                </div>
+                <div class="module-info">
+                    <h3>2. WEAPONRY: CHITINASE SECRETION</h3>
+                    <p>Upon constriction feedback, the modified loops deploy an aggressive, localized payload. The high-density <span class="highlight">Chitinase & Protease Cocktail</span> is secreted straight into the target, liquefying insect armor and absorbing raw nutrients instantly.</p>
+                </div>
+            </div>
+
+            <div class="module-card">
+                <div class="module-img-container">
+                    <img src="image_a8d989.png" alt="Material Strength Chart">
+                </div>
+                <div class="module-info">
+                    <h3>3. COMPOSITE STRENGTH HACK</h3>
+                    <p>Upregulation of cell-wall structural paths forces hyper-sclerotization. As seen in performance benchmarks, the interlocking cellular matrix scales past baseline properties, mimicking the load capacities of <span class="highlight">military-grade concrete equivalents</span>.</p>
+                </div>
+            </div>
+
+            <div class="module-card">
+                <div class="module-img-container">
+                    <img src="image_a8d9c7.png" alt="Self-Healing Panels">
+                </div>
+                <div class="module-info">
+                    <h3>4. AUTONOMOUS SELF-HEALING</h3>
+                    <p>A full architectural integration. When structural panels encounter a breach event (e.g., termite incursions), localized aggression loops guide rapid cellular migration to fill fissures, sealing structural vulnerabilities autonomously.</p>
+                </div>
+            </div>
+
+        </div>
     </div>
 
     <div class="panel">
-        <h2>TELEMETRY & MATERIALS DATA</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Biomass Consumed (g/kg)</th>
-                    <th>Hyphal Density (µm/mm³)</th>
-                    <th>Tensile Strength (MPa)</th>
-                    <th>Self-Healing Rate (mm²/hr)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>0.0 (Baseline)</td>
-                    <td>14,200</td>
-                    <td>12.4</td>
-                    <td>0.5</td>
-                </tr>
-                <tr>
-                    <td>10.5 (Invasion Alert)</td>
-                    <td>28,900</td>
-                    <td>34.1</td>
-                    <td>4.2</td>
-                </tr>
-                <tr>
-                    <td>25.0 (Optimal Saturation)</td>
-                    <td>45,100</td>
-                    <td>58.7</td>
-                    <td>8.9</td>
-                </tr>
-            </tbody>
-        </table>
+        <h2>LIVE TELEMETRY LOGS</h2>
+        <div class="terminal-log">
+            [SYSTEM_LOG v4.02] 12:00 UTC - BOOTING STRAIN PO-X1...<br>
+            12:05 UTC - [ALERT] PEST VIBRATION SIGNATURE DETECTED...<br>
+            12:07 UTC - [DEPLOY] ENZYMATIC PAYLOAD SEQUENCE 04...<br>
+            12:12 UTC - [INFO] TARGET NEUTRALIZED. CONSUMPTION 98.7% COMPLETE.<br>
+            12:15 UTC - [REPAIR] INITIATING FRACTURE SEALING PROTOCOL...<br>
+            12:18 UTC - [STATUS] SECURE. REPAIRED PANEL STRENGTH: 95.2% BASELINE.
+        </div>
     </div>
 
     <footer>
-        SECURE BIO-LOG // HOSTED VIA GITHUB PAGES // ECO-SYSTEM VERSION 4.02
+        SECURE LAB COMM // HOSTED VIA GITHUB PAGES // END TRANSMISSION
     </footer>
 </div>
 

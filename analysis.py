@@ -4,40 +4,42 @@ import random
 class MyceliumSensorArray:
     def __init__(self, strain_id):
         self.strain_id = strain_id
-        self.baseline_voltage = 0.12 # Volts
-        self.system_active = True
-
+        self.baseline_voltage = 0.12  # Baseline cell potential
+        
     def read_hyphal_activity(self):
-        """Simulates electrical spike readouts from the mycelial network."""
-        # Random environmental noise
+        """Simulates bio-electric readouts from the PO-X1 matrix."""
         noise = random.uniform(-0.02, 0.02)
         current_voltage = self.baseline_voltage + noise
         
-        # Simulate a sudden pest encounter (spike trigger)
+        # Randomly trigger a simulated pest contact event
         if random.random() > 0.85:
             current_voltage += random.uniform(0.4, 0.7)
             
         return round(current_voltage, 4)
 
-    def run_monitor(self):
-        print(f"--- INITIALIZING TELEMETRY FOR STRAIN: {self.strain_id} ---")
-        print("Monitoring bio-electric matrix for localized pest intrusion...\n")
+    def verify_enzyme_payload(self, voltage):
+        """Verifies high-density cocktail secretion thresholds."""
+        if voltage > 0.3:
+            return round(random.uniform(15.2, 22.8), 2)
+        return round(random.uniform(0.1, 0.5), 2)
+
+    def run_telemetry_loop(self):
+        print(f"--- PARALLEL TELEMETRY STREAM: {self.strain_id} ---")
+        print("Checking sensory-overhaul circuits and self-healing response...\n")
         
-        try:
-            for _ in range(5):
-                voltage = self.read_hyphal_activity()
-                status = "NOMINAL"
+        for step in range(1, 6):
+            v_read = self.read_hyphal_activity()
+            enzymes = self.verify_enzyme_payload(v_read)
+            system_status = "NOMINAL // HUNTING_MODE"
+            
+            if v_read > 0.3:
+                system_status = "⚠️ INTENTIONAL INTENSE SEPARATION - TARGET ACQUIRED"
                 
-                if voltage > 0.3:
-                    status = "⚠️ INTRUSION DETECTED - CONSUMPTION PHASE ACTIVE"
-                
-                print(f"[MAT-READOUT] Core Voltage: {voltage}V | Status: {status}")
-                time.strip(1) if hasattr(time, 'strip') else time.sleep(1)
-                
-            print("\n[SYS-INFO] Telemetry streaming perfectly. System secure.")
-        except KeyboardInterrupt:
-            print("\nMonitoring paused.")
+            print(f"[CYCLE {step}] Matrix: {v_read}V | Output: {enzymes}u/cm² | {system_status}")
+            time.sleep(1)
+            
+        print("\n[COMPLETE] Grid verification successful. All nodes report green status.")
 
 if __name__ == "__main__":
     monitor = MyceliumSensorArray(strain_id="PO-X1")
-    monitor.run_monitor()
+    monitor.run_telemetry_loop()

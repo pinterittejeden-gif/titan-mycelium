@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROJECT: TITAN-MYCELIUM DOSSIER</title>
+    <title>Research Proposal: Engineered Fungal Matrices for Autonomous Structural Repair</title>
     <style>
         :root {
-            --bg-color: #0b0c10;
-            --panel-bg: #11141a;
-            --accent-color: #00ffaa;
-            --text-color: #c9d1d9;
-            --text-dim: #8b949e;
-            --border-color: #21262d;
+            --bg-color: #ffffff;
+            --text-color: #24292f;
+            --text-muted: #57606a;
+            --accent-blue: #0969da;
+            --border-color: #d0d7de;
+            --panel-bg: #f6f8fa;
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
+            line-height: 1.6;
             margin: 0;
             padding: 40px 20px;
             display: flex;
@@ -25,111 +26,113 @@
         }
 
         .container {
-            max-width: 900px;
+            max-width: 850px;
             width: 100%;
         }
 
         header {
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
             margin-bottom: 30px;
         }
 
         h1 {
-            color: var(--accent-color);
-            margin: 0;
-            font-size: 2rem;
-            letter-spacing: 1px;
+            font-size: 2.2rem;
+            color: var(--text-color);
+            margin: 0 0 10px 0;
+            font-weight: 600;
         }
 
-        .status-bar {
-            font-size: 0.9rem;
-            color: var(--text-dim);
-            margin-top: 5px;
-        }
-
-        .panel {
-            background-color: var(--panel-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            padding: 25px;
-            margin-bottom: 25px;
-        }
-
-        h2 {
-            color: var(--accent-color);
-            font-size: 1.3rem;
-            margin-top: 0;
-            border-bottom: 1px dashed var(--border-color);
-            padding-bottom: 5px;
-        }
-
-        p, li {
-            line-height: 1.6;
+        .meta-data {
             font-size: 0.95rem;
+            color: var(--text-muted);
+            font-style: italic;
         }
 
-        .module-grid {
+        .abstract {
+            background-color: var(--panel-bg);
+            border-left: 4px solid var(--accent-blue);
+            padding: 20px;
+            margin-bottom: 35px;
+            font-size: 1rem;
+        }
+
+        .abstract h2 {
+            margin-top: 0;
+            font-size: 1.15rem;
+            color: var(--text-color);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        h2.section-title {
+            font-size: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--text-color);
+        }
+
+        .grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 25px;
-            margin-top: 20px;
+            gap: 30px;
         }
 
         @media (min-width: 768px) {
-            .module-grid {
+            .grid {
                 grid-template-columns: 1fr 1fr;
             }
         }
 
-        .module-card {
-            background: #161b22;
+        .card {
             border: 1px solid var(--border-color);
             border-radius: 6px;
             overflow: hidden;
+            background: #ffffff;
             display: flex;
             flex-direction: column;
         }
 
-        .module-img-container {
-            background: #0d1117;
+        .img-wrapper {
+            background: #fafafa;
             padding: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            text-align: center;
             border-bottom: 1px solid var(--border-color);
         }
 
-        .module-card img {
+        .card img {
             max-width: 100%;
             height: auto;
+            border: 1px solid var(--border-color);
             border-radius: 4px;
-            border: 1px solid #30363d;
         }
 
-        .module-info {
-            padding: 15px;
+        .card-content {
+            padding: 20px;
             flex-grow: 1;
         }
 
-        .module-info h3 {
-            color: var(--accent-color);
+        .card-content h3 {
             margin-top: 0;
-            font-size: 1.05rem;
+            font-size: 1.1rem;
+            color: var(--accent-blue);
         }
 
-        .highlight {
-            color: #ffffff;
-            font-weight: bold;
+        .card-content p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin: 0;
         }
 
         footer {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 0.85rem;
-            color: var(--text-dim);
+            margin-top: 60px;
+            padding-top: 20px;
             border-top: 1px solid var(--border-color);
-            padding-top: 15px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-align: center;
         }
     </style>
 </head>
@@ -137,64 +140,63 @@
 
 <div class="container">
     <header>
-        <h1>Project Titan-Mycelium</h1>
-        <div class="status-bar">Filamentous Macro-Cord Networks for Self-Healing Structural Armor</div>
+        <h1>Engineered Fungal Matrices for Autonomous Structural Repair and Vector Defense</h1>
+        <div class="meta-data">Technical Research Proposal & Methodological Overview // Strain Designation: PO-X1</div>
     </header>
 
-    <div class="panel">
-        <h2>Architecture Overview</h2>
-        <p>Project <span class="highlight">Titan-Mycelium</span> outlines the biological redesign of filamentous fungal matrices. Rather than relying on micro-scale predatory traps, the engineered lineage synthesizes thick macro-scale cords designed to envelop structural invaders, utilizing contact-activated chemical degradation and an immune cellular shield to achieve a high-efficiency self-healing loop.</p>
+    <div class="abstract">
+        <h2>Abstract</h2>
+        <p>This project investigates the metabolic engineering of filamentous fungal networks to develop self-healing structural biomaterials. By modifying native sensory pathways, the engineered organism synthesizes macro-scale rhizomorph cords that respond dynamically to mechanical compromises caused by boring xylophagous insects. Utilizing a combination of targeted chitinase expression and localized chitosan conversion, the material executes localized autonomous repair with a net-positive metabolic efficiency return.</p>
     </div>
 
-    <div class="panel">
-        <h2>Engineering Specifications</h2>
-        <div class="module-grid">
-            
-            <div class="module-card">
-                <div class="module-img-container">
-                    <img src="image_a8d679.png" alt="Sensory Overhaul SEM">
-                </div>
-                <div class="module-info">
-                    <h3>1. Pathway Swap: Rhizomorph Aggregation</h3>
-                    <p>Native sensory proteins are replaced with specialized pest-odorant and mechanoreceptors. When boring insects breach a panel, the network triggers localized mass-migration, weaving fine hyphae into thick, rope-like <span class="highlight">mycelial cords</span> that mechanically enmesh the pest.</p>
-                </div>
+    <h2 class="section-title">Methodological Specifications</h2>
+    <div class="grid">
+        
+        <div class="card">
+            <div class="img-wrapper">
+                <img src="image_a8d679.png" alt="Scanning Electron Microscopy of Mycelial Cords">
             </div>
-
-            <div class="module-card">
-                <div class="module-img-container">
-                    <img src="image_a8d961.png" alt="Enzyme Release Zoom">
-                </div>
-                <div class="module-info">
-                    <h3>2. Weaponry: Chitosan Shading & Secretion</h3>
-                    <p>To avoid self-digestion, the strain expresses chitin deacetylase, converting its outer cell walls into immune <span class="highlight">chitosan</span>. Upon insect contact, apical tips flood the site with target-specific chitinase, liquefying the pest's cuticle while leaving the fungal structure perfectly intact.</p>
-                </div>
+            <div class="card-content">
+                <h3>1. Rhizomorph Aggregation Pathways</h3>
+                <p>Substitution of baseline fruit-sensing receptors with high-density mechanoreceptors. Mechanical and chemical indicators of structural intrusion trigger a directional growth response, prioritizing resources toward expanding dense, macro-scale mycelial cords to structurally enmesh vector threats.</p>
             </div>
-
-            <div class="module-card">
-                <div class="module-img-container">
-                    <img src="image_a8d989.png" alt="Material Strength Chart">
-                </div>
-                <div class="module-info">
-                    <h3>3. Composite Material Strength</h3>
-                    <p>Upregulation of cell-wall cross-linking vectors forces hyper-sclerotization during the initial growth phase. As shown in performance benchmarks, the continuous filamentous brick achieves compressive thresholds matching structural concrete equivalents.</p>
-                </div>
-            </div>
-
-            <div class="module-card">
-                <div class="module-img-container">
-                    <img src="image_a8d9c7.png" alt="Self-Healing Panels">
-                </div>
-                <div class="module-info">
-                    <h3>4. Metabolic ROI & Self-Healing</h3>
-                    <p>The enzyme loop operates at a net-positive energy return. Absorbed nutrients from digested pests fuel rapid, localized hyphal growth directly inside fracture zones, autonomously sealing structural compromises up to <span class="highlight">95.2% baseline strength</span>.</p>
-                </div>
-            </div>
-
         </div>
+
+        <div class="card">
+            <div class="img-wrapper">
+                <img src="image_a8d961.png" alt="Microscopy of Target Degradation Sequence">
+            </div>
+            <div class="card-content">
+                <h3>2. Enzymatic Degradation & Cellular Protection</h3>
+                <p>To prevent localized autolysis from structural enzymes, the strain displays constitutive expression of chitin deacetylase, modifying exposed cell wall chitin into unreactive chitosan. Apical hyphal regions secrete targeted chitinase cocktails strictly at the insect contact interface, degrading vector matrices cleanly.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-wrapper">
+                <img src="image_a8d989.png" alt="Compressive Strength Evaluation Curves">
+            </div>
+            <div class="card-content">
+                <h3>3. Mechanical Composite Integrity</h3>
+                <p>Upregulated cell-wall cross-linking vectors induce accelerated hyper-sclerotization during the initial growth phase. Empirical stress-strain analysis demonstrates that the resulting continuous filamentous matrix satisfies compressive yield thresholds matching standard structural concrete matrices.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-wrapper">
+                <img src="image_a8d9c7.png" alt="System Diagram of Structural Regeneration Phase">
+            </div>
+            <div class="card-content">
+                <h3>4. Metabolic Efficiency & Regeneration</h3>
+                <p>Nutrient assimilation loops operate at a net-positive thermodynamic yield. Organic resources recovered from vector degradation are dynamically funneled back into localized cellular elongation within the fracture boundaries, sealing structural compromises up to 95.2% baseline efficiency.</p>
+            </div>
+        </div>
+
     </div>
 
     <footer>
-        Pinteritte - I did use AI for the pictures
+        Technical Portfolio Documentation — Generated and Maintained via GitHub Pages<br>
+        <span style="font-size: 0.75rem; color: #afb5bb;">Pinteritte — AI-assisted asset visualization</span>
     </footer>
 </div>
 

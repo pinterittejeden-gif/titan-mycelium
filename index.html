@@ -49,7 +49,7 @@
             font-style: italic;
         }
 
-        .abstract {
+        .abstract, .disclaimer {
             background-color: var(--panel-bg);
             border-left: 4px solid var(--accent-blue);
             padding: 20px;
@@ -57,7 +57,7 @@
             font-size: 1rem;
         }
 
-        .abstract h2 {
+        .abstract h2, .disclaimer h2 {
             margin-top: 0;
             font-size: 1.15rem;
             color: var(--text-color);
@@ -109,6 +109,13 @@
             border-radius: 4px;
         }
 
+        .figure-caption {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-top: 8px;
+            text-align: left;
+        }
+
         .card-content {
             padding: 20px;
             flex-grow: 1;
@@ -145,6 +152,24 @@
             color: var(--text-color);
         }
 
+        .references {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .references li {
+            margin-bottom: 12px;
+        }
+
+        a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
         footer {
             margin-top: 60px;
             padding-top: 20px;
@@ -160,12 +185,17 @@
 <div class="container">
     <header>
         <h1>Engineered Fungal Matrices for Autonomous Structural Repair and Vector Defense</h1>
-        <div class="meta-data">Conceptual Research Proposal & Methodological Overview // Strain Designation: PO-X1</div>
+        <div class="meta-data">Conceptual Research Proposal & Design Overview // Strain Designation: PO-X1</div>
     </header>
+
+    <div class="disclaimer">
+        <h2>Project Status</h2>
+        <p>This page presents a hypothetical synthetic biology design for portfolio and educational purposes. PO-X1 has not been physically engineered, tested, or validated by me. Figures are AI-generated conceptual illustrations and should not be interpreted as experimental microscopy, measured graphs, or laboratory results.</p>
+    </div>
 
     <div class="abstract">
         <h2>Abstract</h2>
-        <p>This conceptual project explores how engineered filamentous fungal networks could be used as self-repairing structural biomaterials. The proposed PO-X1 system redirects fungal growth behavior toward damage sensing, localized reinforcement, and controlled interaction with wood-boring insect activity. Rather than presenting experimental results, this overview outlines a speculative synthetic biology design in which mycelial cords respond to structural compromise, release defensive enzymes only at contact zones, and remain limited by biological containment controls that reduce unwanted reproductive growth.</p>
+        <p>Timber and other bio-based construction materials are vulnerable to cracking, moisture damage, fungal decay, and wood-boring insects. Current repair methods usually require damage to be detected after it has already spread, creating long-term maintenance costs and material waste. This proposal explores a speculative living-material system in which filamentous fungal networks are designed to sense localized structural damage, reinforce weakened regions, and reduce insect activity through controlled enzyme release. The concept builds on existing research into mycelium-based composites, fungal growth behavior, chitin-degrading enzymes, and developmental control pathways. Rather than claiming a finished organism or tested material, this proposal frames PO-X1 as a conceptual research direction for future self-healing biomaterials.</p>
     </div>
 
     <h2 class="section-title">Methodological Specifications</h2>
@@ -174,40 +204,44 @@
         <div class="card">
             <div class="img-wrapper">
                 <img src="image_a8d679.png" alt="Conceptual microscopy of modified mycelial cords">
+                <div class="figure-caption">Figure 1. AI-generated conceptual visualization of dense mycelial cord formation. Not experimental SEM data.</div>
             </div>
             <div class="card-content">
                 <h3>1. Rhizomorph Aggregation Pathways</h3>
-                <p>Baseline sensory pathways are conceptually redirected toward damage detection rather than reproductive development. Mechanical stress and chemical traces associated with wood-boring insects would trigger denser local mycelial growth, forming cord-like structures around compromised regions.</p>
+                <p>The first design goal is localized growth toward damaged zones. Fungal mycelium naturally forms branching networks, and some fungi can organize into thicker transport structures known as rhizomorphs. PO-X1 imagines redirecting this behavior toward mechanical stress and chemical signals associated with damaged timber, producing denser cord-like growth around compromised regions instead of uncontrolled outward expansion.</p>
             </div>
         </div>
 
         <div class="card">
             <div class="img-wrapper">
                 <img src="image_a8d961.png" alt="Conceptual microscopy of localized enzyme release">
+                <div class="figure-caption">Figure 2. AI-generated conceptual visualization of localized enzyme activity at an insect contact interface.</div>
             </div>
             <div class="card-content">
                 <h3>2. Enzymatic Degradation & Cellular Protection</h3>
-                <p>The proposed system separates defensive enzyme release from structural growth zones. Chitin-targeting enzymes are modeled as localized responses at insect contact points, while protective wall modifications reduce the risk of self-damage within the fungal matrix.</p>
+                <p>Wood-boring insects contain chitin in their exoskeletons, and chitinases are enzymes capable of breaking down chitin. In this concept, chitin-targeting enzyme release is restricted to insect contact zones rather than being produced throughout the full material. Protective wall modifications are included as a design constraint so that defensive enzyme activity does not weaken the fungal matrix itself.</p>
             </div>
         </div>
 
         <div class="card">
             <div class="img-wrapper">
                 <img src="image_a8d989.png" alt="Speculative composite strength comparison">
+                <div class="figure-caption">Figure 3. AI-generated illustrative strength comparison. This chart is speculative and does not report measured PO-X1 performance.</div>
             </div>
             <div class="card-content">
                 <h3>3. Mechanical Composite Integrity</h3>
-                <p>In this concept, reinforced hyphal bonding and increased wall cross-linking improve the stiffness of the living composite over time. The strength chart is intended as a speculative comparison rather than measured performance data.</p>
+                <p>Mycelium-based composites are already being studied as lightweight, sustainable materials, but their mechanical performance depends strongly on fungal species, substrate, growth conditions, density, and processing method. PO-X1 therefore does not claim concrete-level strength. Instead, it proposes that controlled hyphal bonding and matrix densification could improve local stiffness enough to support minor crack filling, insulation repair, or non-load-bearing reinforcement.</p>
             </div>
         </div>
 
         <div class="card">
             <div class="img-wrapper">
                 <img src="image_a8d9c7.png" alt="Conceptual system diagram of structural regeneration">
+                <div class="figure-caption">Figure 4. AI-generated system diagram showing a proposed damage response and regeneration cycle.</div>
             </div>
             <div class="card-content">
                 <h3>4. Metabolic Recovery & Regeneration</h3>
-                <p>Recovered organic material from damaged regions and insect activity is hypothetically redirected into new hyphal growth. The repair phase is presented as a modeled regeneration process, where the matrix gradually fills cracks and restores part of the lost structural continuity.</p>
+                <p>The regeneration phase is modeled as a localized repair response rather than a complete structural rebuild. Nutrients from the surrounding substrate and damaged organic material would be redirected into new hyphal growth near cracks or insect galleries. The expected outcome is partial restoration of continuity within small defects, not guaranteed recovery of full original strength.</p>
             </div>
         </div>
 
@@ -215,11 +249,23 @@
 
     <h2 class="section-title">Lifecycle & Bio-Containment Controls</h2>
     <div class="list-panel">
-        <p><strong>Mitigation of Uncontrolled Sporulation and Fruiting Morphogenesis:</strong></p>
+        <p><strong>Mitigation of uncontrolled sporulation and fruiting morphogenesis:</strong></p>
         <ul>
-            <li><strong>Developmental Pathway Suppression:</strong> The concept assumes suppression of major reproductive signaling pathways that normally support aerial hyphae and fruiting body formation. This keeps the organism focused on vegetative structural growth rather than visible mushroom formation.</li>
-            <li><strong>Environmental Containment:</strong> The material is described as dependent on controlled nutrient and moisture conditions. Outside of its intended substrate environment, the matrix would be designed to lose long-term viability rather than spread or form exterior fungal growths.</li>
+            <li><strong>Developmental Pathway Suppression:</strong> Fungal development is regulated by genetic networks that influence vegetative growth, sporulation, and reproductive structures. PO-X1 uses this as a conceptual basis for suppressing reproductive development and biasing the organism toward vegetative matrix growth. This is presented as a design goal, not a validated containment system.</li>
+            <li><strong>Environmental Dependence:</strong> The proposed material would be designed to require controlled moisture, nutrients, and substrate conditions. Outside its intended environment, long-term viability should decrease rather than allowing uncontrolled spread. Any real version of this concept would require extensive biosafety testing before practical use.</li>
         </ul>
+    </div>
+
+    <h2 class="section-title">References</h2>
+    <div class="list-panel references">
+        <ol>
+            <li>Appels, F. V. W. et al. “Fabrication Factors Influencing Mechanical, Moisture- and Water-Related Properties of Mycelium-Based Composites.” <em>Materials & Design</em>, 2019. <a href="https://doi.org/10.1016/j.matdes.2018.11.027" target="_blank">https://doi.org/10.1016/j.matdes.2018.11.027</a></li>
+            <li>Elsacker, E. et al. “Mechanical, Physical and Chemical Characterisation of Mycelium-Based Composites with Different Types of Lignocellulosic Substrates.” <em>PLOS ONE</em>, 2019. <a href="https://doi.org/10.1371/journal.pone.0213954" target="_blank">https://doi.org/10.1371/journal.pone.0213954</a></li>
+            <li>Attias, N. et al. “Mycelium Bio-Composites in Industrial Design and Architecture: Comparative Review and Experimental Analysis.” <em>Journal of Cleaner Production</em>, 2020. <a href="https://doi.org/10.1016/j.jclepro.2019.119037" target="_blank">https://doi.org/10.1016/j.jclepro.2019.119037</a></li>
+            <li>Shen, S. C. et al. “Robust Myco-Composites as a Platform for Versatile Hybrid-Living Structural Materials.” <em>arXiv</em>, 2023. <a href="https://arxiv.org/abs/2305.12151" target="_blank">https://arxiv.org/abs/2305.12151</a></li>
+            <li>Veliz, E. A., Martínez-Hidalgo, P., & Hirsch, A. M. “Chitinase-Producing Bacteria and Their Role in Biocontrol.” <em>AIMS Microbiology</em>, 2017. <a href="https://doi.org/10.3934/microbiol.2017.3.689" target="_blank">https://doi.org/10.3934/microbiol.2017.3.689</a></li>
+            <li>Bayram, Ö. et al. “VelB/VeA/LaeA Complex Coordinates Light Signal with Fungal Development and Secondary Metabolism.” <em>Science</em>, 2008. <a href="https://doi.org/10.1126/science.1155888" target="_blank">https://doi.org/10.1126/science.1155888</a></li>
+        </ol>
     </div>
 
     <footer>
@@ -229,4 +275,4 @@
 </div>
 
 </body>
-</html>
+                                                                                                                                                                                                                                                                                                                          </html>

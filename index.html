@@ -1,311 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Proposal: Engineered Fungal Matrices for Autonomous Structural Repair</title>
-    <style>
-        :root {
-            --bg-color: #ffffff;
-            --text-color: #24292f;
-            --text-muted: #57606a;
-            --accent-blue: #0969da;
-            --border-color: #d0d7de;
-            --panel-bg: #f6f8fa;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            margin: 0;
-            padding: 40px 20px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .container {
-            max-width: 850px;
-            width: 100%;
-        }
-
-        .back-home {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            margin-bottom: 22px;
-            padding: 8px 13px;
-            border: 1px solid var(--border-color);
-            border-radius: 999px;
-            background-color: var(--panel-bg);
-            color: var(--text-color);
-            font-size: 0.85rem;
-            font-weight: 600;
-            text-decoration: none;
-        }
-
-        .back-home:hover {
-            background-color: #eef2f6;
-            border-color: #afb8c1;
-            text-decoration: none;
-        }
-
-        header {
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-
-        h1 {
-            font-size: 2.2rem;
-            color: var(--text-color);
-            margin: 0 0 10px 0;
-            font-weight: 600;
-        }
-
-        .meta-data {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            font-style: italic;
-        }
-
-        .abstract, .disclaimer {
-            background-color: var(--panel-bg);
-            border-left: 4px solid var(--accent-blue);
-            padding: 20px;
-            margin-bottom: 35px;
-            font-size: 1rem;
-        }
-
-        .abstract h2, .disclaimer h2 {
-            margin-top: 0;
-            font-size: 1.15rem;
-            color: var(--text-color);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        h2.section-title {
-            font-size: 1.5rem;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 8px;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            color: var(--text-color);
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 30px;
-        }
-
-        @media (min-width: 768px) {
-            .grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        .card {
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            overflow: hidden;
-            background: #ffffff;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .img-wrapper {
-            background: #fafafa;
-            padding: 15px;
-            text-align: center;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .card img {
-            width: 100%;
-            height: 230px;
-            object-fit: cover;
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-            background: #ffffff;
-        }
-
-        .card img.diagram {
-            object-fit: contain;
-            background: #ffffff;
-        }
-
-        .figure-caption {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            margin-top: 8px;
-            text-align: left;
-        }
-
-        .card-content {
-            padding: 20px;
-            flex-grow: 1;
-        }
-
-        .card-content h3 {
-            margin-top: 0;
-            font-size: 1.1rem;
-            color: var(--accent-blue);
-        }
-
-        .card-content p {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            margin: 0;
-        }
-
-        .list-panel {
-            background-color: var(--panel-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            padding: 20px;
-            margin-top: 25px;
-        }
-
-        .list-panel ul {
-            margin: 0;
-            padding-left: 20px;
-        }
-
-        .list-panel li {
-            font-size: 0.95rem;
-            margin-bottom: 10px;
-            color: var(--text-color);
-        }
-
-        .references {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-        }
-
-        .references li {
-            margin-bottom: 12px;
-        }
-
-        a {
-            color: var(--accent-blue);
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            margin-top: 60px;
-            padding-top: 20px;
-            border-top: 1px solid var(--border-color);
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            text-align: center;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Titan-Mycelium — Localized fungal matrices for material repair</title>
+  <meta name="description" content="An evidence-aware concept proposal for a nutrient-dependent fungal matrix providing localized, non-structural repair.">
+  <meta name="theme-color" content="#43326f">
+  <link rel="canonical" href="https://pinterittejeden-gif.github.io/titan-mycelium/">
+  <meta property="og:title" content="Titan-Mycelium">
+  <meta property="og:description" content="A nutrient-dependent fungal-matrix concept for localized, non-structural repair.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://pinterittejeden-gif.github.io/titan-mycelium/">
+  <link rel="stylesheet" href="../pinterittejeden-gif/research.css?v=1.2">
 </head>
-<body>
+<body class="theme-titan">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="proposal-shell">
+    <nav class="proposal-nav" aria-label="Proposal navigation">
+      <a href="https://pinterittejeden-gif.github.io/pinterittejeden-gif/">← BIOFOLIO</a>
+      <span class="status-pill">Concept proposal · not validated</span>
+    </nav>
 
-<div class="container">
-    <a class="back-home" href="https://pinterittejeden-gif.github.io/pinterittejeden-gif/">
-        ← Back to main page
-    </a>
-
-    <header>
-        <h1>Engineered Fungal Matrices for Autonomous Structural Repair and Vector Defense</h1>
-        <div class="meta-data">Conceptual Research Proposal & Design Overview // Strain Designation: PO-X1</div>
-    </header>
-
-    <div class="disclaimer">
-        <h2>Project Status</h2>
-        <p>This is a hypothetical synthetic biology project made for portfolio and educational use. PO-X1 has not been built, tested, or validated by me. Images 1–3 are reference visuals for the biological ideas, and Image 4 is an AI-generated concept diagram. The numbered citations show which sources support each mechanism; the images are not experimental results from PO-X1.</p>
-    </div>
-
-    <div class="abstract">
-        <h2>Abstract</h2>
-        <p>Timber and other bio-based construction materials crack, absorb moisture, decay, and get attacked by wood-boring insects. Most repairs happen only after the damage is visible, which means wasted material and long-term maintenance. PO-X1 is a speculative fungal repair system: a filamentous network that grows only around small damaged zones, adds local reinforcement, and releases defensive enzymes only when the right biological trigger is present. Mycelium composites are already being studied, but their strength depends heavily on species, substrate, moisture, density, and processing, so PO-X1 is not treated as concrete-strength material or a universal structural replacement [1,2,3]. The idea instead pulls from hybrid living myco-composites, fungal cell-wall biology, chitin-degrading enzymes, and developmental control pathways [4,5,6,7]. The key safety constraint is simple: the building material cannot be the fungus's food. A real version would need a separate sacrificial nutrient layer, so the repair organism helps fill damage instead of becoming another form of rot.</p>
-    </div>
-
-    <h2 class="section-title">Methodological Specifications</h2>
-    <div class="grid">
-        
-        <div class="card">
-            <div class="img-wrapper">
-                <img src="1.png" alt="Real rhizomorphs showing dense fungal cord formation">
-                <div class="figure-caption">Figure 1. Real fungal rhizomorphs used as a reference for dense mycelial cord formation and controlled vegetative growth behavior [4,7].</div>
-            </div>
-            <div class="card-content">
-                <h3>1. Rhizomorph Aggregation Pathways</h3>
-                <p>The first goal is growth that stays where the damage is. Fungal mycelium already forms branching networks, and myco-composite studies show that the final material depends on controlled growth conditions, not just letting fungus spread wherever it wants [1,2,3]. PO-X1 would use cord-like vegetative growth around mechanical stress, moisture gradients, and chemical signals from small cracks. The fungus would not be allowed to feed on the repaired timber as its main substrate. Instead, an embedded nutrient layer, hydrogel reservoir, or biodegradable microcapsules would feed the response. That keeps growth aimed at temporary crack filling and local bonding rather than slow digestion of the host structure.</p>
-            </div>
+    <main id="main">
+      <header class="proposal-hero">
+        <div>
+          <p class="eyebrow">Engineered living materials · Project 04</p>
+          <h1>Titan-Mycelium</h1>
+          <p class="proposal-dek">Could a nutrient-dependent fungal matrix activate around a small damaged zone, provide limited non-structural reinforcement, and then stop without consuming or colonizing the host material?</p>
+          <div class="proposal-meta" role="group" aria-label="Project characteristics">
+            <span class="tag">Mycelium composites</span>
+            <span class="tag">Localized repair</span>
+            <span class="tag">Containment first</span>
+          </div>
         </div>
 
-        <div class="card">
-            <div class="img-wrapper">
-                <img src="2.png" alt="Microscopy image of fungal interaction with a biological target">
-                <div class="figure-caption">Figure 2. Fungal interaction with a biological target, used as a reference for localized enzyme-mediated defense rather than whole-material secretion [5,6].</div>
-            </div>
-            <div class="card-content">
-                <h3>2. Enzymatic Degradation & Cellular Protection</h3>
-                <p>Wood-boring insects have chitin in their exoskeletons, and chitinases can break down chitin-containing structures [6]. The catch is that fungal cell walls also contain chitin, so constant chitinase release could hurt PO-X1 too [5]. The fix is to make the enzyme response local and conditional. Chitin-targeting activity would switch on only near confirmed macro-boring insect contact, while secretion gates, local inhibitors, and wall-protection changes reduce self-digestion. Nematodes are handled differently because they are tiny and do not chew wood like termites. They would count as a separate biological stress signal, not the same kind of jaw-based structural intrusion.</p>
-            </div>
+        <div class="system-diagram" role="img" aria-label="Concept flow from local damage through sacrificial nutrient activation and restricted fungal growth to partial stabilization and termination">
+          <div class="diagram-core">local repair zone</div>
+          <span class="diagram-node node-top">small damage signal</span>
+          <span class="diagram-node node-right">sacrificial nutrient release</span>
+          <span class="diagram-node node-bottom">restricted hyphal bonding</span>
+          <span class="diagram-node node-left">nutrient exhaustion and stop</span>
+          <span class="diagram-caption">Original concept diagram · proposed control sequence, not a demonstrated organism</span>
+        </div>
+      </header>
+
+      <aside class="disclosure" aria-labelledby="disclosure-title">
+        <strong id="disclosure-title">What this page does—and does not—claim</strong>
+        <p>Titan-Mycelium has not been built, cultured, genetically modified, installed, or tested by the author. Mycelium-composite research supports material behavior under controlled production; it does not establish safe autonomous growth inside finished structures.</p>
+      </aside>
+
+      <section class="proposal-section" aria-labelledby="boundary-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Evidence boundary</p>
+            <h2 id="boundary-title">A living repair material contains a built-in contradiction</h2>
+          </div>
+          <p>The organism needs moisture and nutrients to act, while moisture and biological activity can also accelerate decay. Activation, host protection, and termination must therefore be demonstrated as one coupled control problem.</p>
         </div>
 
-        <div class="card">
-            <div class="img-wrapper">
-                <img src="3.png" alt="SEM image of a mycelium-based composite structure">
-                <div class="figure-caption">Figure 3. Mycelium-composite reference image showing hyphal network structure and the substrate-dependent nature of mechanical performance [1,2,3].</div>
-            </div>
-            <div class="card-content">
-                <h3>3. Mechanical Composite Integrity</h3>
-                <p>Mycelium composites can be lightweight and useful, but they are not magic. Their performance changes with fungal species, substrate, growth conditions, density, moisture, and processing method [1,2,3]. PO-X1 therefore makes no concrete-strength claim. The realistic target is smaller: controlled hyphal bonding and local densification that might help with minor crack filling, insulation repair, or non-load-bearing reinforcement. Any structural use would have to be compared with normal repair materials, and the organism would need to stop expanding once the defect is locally stabilized.</p>
-            </div>
+        <div class="boundary-grid">
+          <article class="boundary-card">
+            <span>Established basis</span>
+            <h3>Fungal networks can bind lignocellulosic composites</h3>
+            <p>Species, substrate, growth conditions, density, moisture, and processing strongly influence mycelium-composite properties [1–4]. Fungal development and cell-wall biology provide additional control context [5,7].</p>
+          </article>
+          <article class="boundary-card">
+            <span>Proposed bridge</span>
+            <h3>Move controlled growth from manufacture into a damage zone</h3>
+            <p>The proposal embeds a finite nutrient source and uses local damage-associated conditions to restrict temporary hyphal bonding around a small defect.</p>
+          </article>
+          <article class="boundary-card">
+            <span>Critical unknowns</span>
+            <h3>Detection, host digestion, moisture, strength, and evolutionary drift</h3>
+            <p>No mechanism has yet been selected that reliably distinguishes useful repair conditions, prevents wood consumption, preserves fungal viability, and terminates growth.</p>
+          </article>
+          <article class="boundary-card">
+            <span>Minimum proof</span>
+            <h3>Localized benefit without measurable host damage</h3>
+            <p>A contained coupon study must show repeatable activation only at defects, no extra substrate mass loss, partial mechanical benefit, no reproductive escape, and complete termination.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="proposal-section" aria-labelledby="architecture-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">System architecture</p>
+            <h2 id="architecture-title">Repair is a controlled pulse, not permanent growth</h2>
+          </div>
+          <p>The realistic first target is a replaceable, non-load-bearing panel or insulation element—not beams, occupied structural timber, or autonomous building-scale deployment.</p>
         </div>
 
-        <div class="card">
-            <div class="img-wrapper">
-                <img class="diagram" src="4.png" alt="Conceptual system diagram of structural regeneration">
-                <div class="figure-caption">Figure 4. Conceptual diagram of the proposed PO-X1 regeneration cycle, showing crack formation, insect intrusion, localized hyphal response, sacrificial nutrient use, and partial structural stabilization [4].</div>
-            </div>
-            <div class="card-content">
-                <h3>4. Metabolic Recovery & Regeneration</h3>
-                <p>The repair phase is meant to be local, not a full rebuild. Nutrients would come from embedded biodegradable capsules, a replaceable hydrogel reservoir, or another sacrificial supply, not from the structural material itself. That keeps the fungus tied to the repair zone and prevents the host timber from becoming food. The expected result is partial continuity across small defects, not full recovery of original strength. Long-term tests would also need to watch for evolution in the wrong direction: faster spread, weaker repair output, or loss of expensive defense enzyme production.</p>
-            </div>
+        <div class="mechanism-grid">
+          <article class="mechanism-card">
+            <span>01 · Damage interface</span>
+            <h3>Define a physical activation window</h3>
+            <p>Mechanical separation, local moisture, and release from a damaged nutrient capsule could form a simpler early trigger than assuming the fungus can accurately interpret an abstract “crack signal.”</p>
+          </article>
+          <article class="mechanism-card">
+            <span>02 · Finite metabolism</span>
+            <h3>Feed the response without feeding on the structure</h3>
+            <p>A replaceable hydrogel, biodegradable capsule, or sacrificial embedded layer would provide the intended carbon and nutrients. Host mass loss must be measured directly, not inferred from visual appearance.</p>
+          </article>
+          <article class="mechanism-card">
+            <span>03 · Local bonding</span>
+            <h3>Target modest, non-structural improvement</h3>
+            <p>Hyphal bridging and local densification might reduce crack opening or restore some stiffness in a low-risk element. The project makes no concrete-strength or full-recovery claim [1–4].</p>
+          </article>
+          <article class="mechanism-card">
+            <span>04 · Defense and termination</span>
+            <h3>Separate optional defense from the repair minimum</h3>
+            <p>Chitin-targeting defense is biologically complicated because fungal walls also contain chitin [5,6]. It should remain a later module; the first proof problem is safe localized repair and reliable growth termination.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="proposal-section" aria-labelledby="metrics-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Preliminary design gates</p>
+            <h2 id="metrics-title">Prove containment and host protection before strength</h2>
+          </div>
+          <p>These gates describe a small sealed-coupon experiment. They are not performance claims or specifications for inhabited structures.</p>
         </div>
 
-    </div>
+        <div class="metrics-wrap">
+          <table class="metrics">
+            <thead><tr><th>Measure</th><th>Minimum signal for continued development</th><th>Stop or redesign condition</th></tr></thead>
+            <tbody>
+              <tr><td>Localization</td><td>At least 90% of new fungal biomass remains within the pre-registered repair boundary.</td><td>Growth reaches intact host zones, fasteners, coatings, or neighboring coupons.</td></tr>
+              <tr><td>Host protection</td><td>No statistically detectable extra host-material mass loss versus a sterile damaged control.</td><td>Evidence of lignocellulose consumption, softening, decay chemistry, or moisture retention.</td></tr>
+              <tr><td>Repair signal</td><td>At least 20% recovery of the pre-registered stiffness or crack-opening measure versus the damaged untreated control.</td><td>Visual filling occurs without repeatable mechanical benefit.</td></tr>
+              <tr><td>Termination</td><td>No renewed growth after nutrient exhaustion across three wet–dry challenge cycles.</td><td>Growth restarts without a new sacrificial nutrient input.</td></tr>
+              <tr><td>Reproductive containment</td><td>No detectable spores or reproductive structures outside the sealed matrix during and after challenge testing.</td><td>Any reproducible reproductive escape or transfer to an untreated substrate.</td></tr>
+              <tr><td>Durability</td><td>Retain at least 80% of the observed repair benefit after the pre-registered humidity and aging cycle.</td><td>The repaired region collapses, retains damaging moisture, or becomes more brittle than the control.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
 
-    <h2 class="section-title">Lifecycle & Bio-Containment Controls</h2>
-    <div class="list-panel">
-        <p><strong>Containment logic for keeping the fungus useful instead of invasive:</strong></p>
-        <ul>
-            <li><strong>Developmental Pathway Suppression:</strong> Fungal development is controlled by genetic networks that influence vegetative growth, sporulation, and reproductive structures [7]. PO-X1 uses that biology to bias the organism toward vegetative matrix growth and away from fruiting or spore-heavy behavior. Since evolution will favor survival over the repair job, containment cannot depend on one switch. Reproductive limits, nutrient dependence, and loss-of-function monitoring would have to work together.</li>
-            <li><strong>Environmental Dependence:</strong> PO-X1 would only work in a narrow moisture and nutrient window. Without the sacrificial nutrient phase and controlled substrate conditions, it should lose viability instead of spreading. Before any practical use, repeated passage tests would check whether it starts digesting the host material, stops repairing efficiently, or regains reproductive behavior.</li>
-        </ul>
-    </div>
+      <section class="proposal-section" aria-labelledby="controls-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Risk controls</p>
+            <h2 id="controls-title">Assume evolution favors the fungus, not the repair job</h2>
+          </div>
+          <p>Containment cannot depend on one genetic switch or on the expectation that a metabolically costly engineered behavior remains stable.</p>
+        </div>
 
-    <h2 class="section-title">References</h2>
-    <div class="list-panel references">
-        <ol>
-            <li>Appels, F. V. W. et al. “Fabrication Factors Influencing Mechanical, Moisture- and Water-Related Properties of Mycelium-Based Composites.” <em>Materials & Design</em>, 2019. <a href="https://doi.org/10.1016/j.matdes.2018.11.027" target="_blank">https://doi.org/10.1016/j.matdes.2018.11.027</a></li>
-            <li>Elsacker, E. et al. “Mechanical, Physical and Chemical Characterisation of Mycelium-Based Composites with Different Types of Lignocellulosic Substrates.” <em>PLOS ONE</em>, 2019. <a href="https://doi.org/10.1371/journal.pone.0213954" target="_blank">https://doi.org/10.1371/journal.pone.0213954</a></li>
-            <li>Attias, N. et al. “Mycelium Bio-Composites in Industrial Design and Architecture: Comparative Review and Experimental Analysis.” <em>Journal of Cleaner Production</em>, 2020. <a href="https://doi.org/10.1016/j.jclepro.2019.119037" target="_blank">https://doi.org/10.1016/j.jclepro.2019.119037</a></li>
-            <li>Shen, S. C. et al. “Robust Myco-Composites as a Platform for Versatile Hybrid-Living Structural Materials.” <em>arXiv</em>, 2023. <a href="https://arxiv.org/abs/2305.12151" target="_blank">https://arxiv.org/abs/2305.12151</a></li>
-            <li>Bowman, S. M., & Free, S. J. “The Structure and Synthesis of the Fungal Cell Wall.” <em>BioEssays</em>, 2006. <a href="https://doi.org/10.1002/bies.20441" target="_blank">https://doi.org/10.1002/bies.20441</a></li>
-            <li>Veliz, E. A., Martínez-Hidalgo, P., & Hirsch, A. M. “Chitinase-Producing Bacteria and Their Role in Biocontrol.” <em>AIMS Microbiology</em>, 2017. <a href="https://doi.org/10.3934/microbiol.2017.3.689" target="_blank">https://doi.org/10.3934/microbiol.2017.3.689</a></li>
-            <li>Bayram, Ö. et al. “VelB/VeA/LaeA Complex Coordinates Light Signal with Fungal Development and Secondary Metabolism.” <em>Science</em>, 2008. <a href="https://doi.org/10.1126/science.1155888" target="_blank">https://doi.org/10.1126/science.1155888</a></li>
+        <div class="control-grid">
+          <article class="control-card"><span>Scope</span><h3>Replaceable, sealed components first</h3><p>Limit early studies to retrievable non-load-bearing coupons and panels with visible inspection access.</p></article>
+          <article class="control-card"><span>Metabolism</span><h3>Finite external nutrient dependence</h3><p>Require an engineered repair-zone nutrient source and reject systems that obtain useful energy by consuming the host.</p></article>
+          <article class="control-card"><span>Reproduction</span><h3>Layered containment</h3><p>Combine developmental suppression, environmental dependence, physical sealing, reproductive monitoring, and disposal controls [7].</p></article>
+          <article class="control-card"><span>Operations</span><h3>Defined removal trigger</h3><p>Remove the component if growth crosses its boundary, host mass declines, moisture persists, reproductive structures appear, or repair output drifts.</p></article>
+        </div>
+      </section>
+
+      <section class="proposal-section" aria-labelledby="roadmap-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Validation roadmap</p>
+            <h2 id="roadmap-title">Start with a dead-simple sealed coupon</h2>
+          </div>
+          <p>Defense enzymes and genetically complex sensing stay out of scope until local growth, host protection, termination, and material benefit are independently demonstrated.</p>
+        </div>
+
+        <ol class="roadmap">
+          <li><h3>Species and substrate screen</h3><p>Compare candidate non-pathogenic strains and inert/sacrificial feedstocks for bonding, host mass loss, moisture, and reproducibility.</p></li>
+          <li><h3>Finite nutrient module</h3><p>Measure growth with and without the sacrificial nutrient source and reject candidates that continue on the host material.</p></li>
+          <li><h3>Damage-localization trial</h3><p>Use sealed coupons with standardized defects and blinded mapping of fungal biomass beyond the repair boundary.</p></li>
+          <li><h3>Mechanical characterization</h3><p>Compare stiffness, crack opening, adhesion, humidity response, and aging against damaged and conventional-repair controls.</p></li>
+          <li><h3>Containment challenge</h3><p>Apply repeated wet–dry cycles, temperature changes, adjacent untreated substrates, and reproductive monitoring.</p></li>
+          <li><h3>Optional defense module</h3><p>Only after repair gates pass, study whether a localized defensive response adds benefit without self-damage or non-target effects.</p></li>
         </ol>
-    </div>
+      </section>
 
-    <footer>
-        another trophy to my portfolio ig <br>
-        <span style="font-size: 0.75rem; color: #afb5bb;">Pinteritte - everything made by me :].</span>
+      <section class="proposal-section" aria-labelledby="references-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Literature</p>
+            <h2 id="references-title">References</h2>
+          </div>
+          <p>References support component biology and materials context. They do not demonstrate autonomous repair in finished structures.</p>
+        </div>
+
+        <ol class="references">
+          <li>Appels, F. V. W. et al. “Fabrication Factors Influencing Mechanical, Moisture- and Water-Related Properties of Mycelium-Based Composites.” <em>Materials &amp; Design</em>, 2019. <a href="https://doi.org/10.1016/j.matdes.2018.11.027" target="_blank" rel="noopener noreferrer">DOI</a></li>
+          <li>Elsacker, E. et al. “Mechanical, Physical and Chemical Characterisation of Mycelium-Based Composites with Different Types of Lignocellulosic Substrates.” <em>PLOS ONE</em>, 2019. <a href="https://doi.org/10.1371/journal.pone.0213954" target="_blank" rel="noopener noreferrer">DOI</a></li>
+          <li>Attias, N. et al. “Mycelium Bio-Composites in Industrial Design and Architecture.” <em>Journal of Cleaner Production</em>, 2020. <a href="https://doi.org/10.1016/j.jclepro.2019.119037" target="_blank" rel="noopener noreferrer">DOI</a></li>
+          <li>Shen, S. C. et al. “Robust Myco-Composites as a Platform for Versatile Hybrid-Living Structural Materials.” Preprint, 2023. <a href="https://arxiv.org/abs/2305.12151" target="_blank" rel="noopener noreferrer">Preprint</a></li>
+          <li>Bowman, S. M., &amp; Free, S. J. “The Structure and Synthesis of the Fungal Cell Wall.” <em>BioEssays</em>, 2006. <a href="https://doi.org/10.1002/bies.20441" target="_blank" rel="noopener noreferrer">DOI</a></li>
+          <li>Veliz, E. A., Martínez-Hidalgo, P., &amp; Hirsch, A. M. “Chitinase-Producing Bacteria and Their Role in Biocontrol.” <em>AIMS Microbiology</em>, 2017. <a href="https://doi.org/10.3934/microbiol.2017.3.689" target="_blank" rel="noopener noreferrer">DOI</a></li>
+          <li>Bayram, Ö. et al. “VelB/VeA/LaeA Complex Coordinates Light Signal with Fungal Development and Secondary Metabolism.” <em>Science</em>, 2008. <a href="https://doi.org/10.1126/science.1155888" target="_blank" rel="noopener noreferrer">DOI</a></li>
+        </ol>
+        <p class="source-note">Visual provenance: every visual on this page is an original HTML/CSS concept diagram created for BIOFOLIO. No third-party image assets are used.</p>
+      </section>
+    </main>
+
+    <footer class="proposal-footer">
+      <p>Titan-Mycelium · Concept proposal by Pinteritte · Version 1.1, 2026</p>
+      <div><a href="README.md">Project notes</a><a href="LICENSE.md">License</a><a href="#main">Top ↑</a></div>
     </footer>
-</div>
-
+  </div>
 </body>
 </html>

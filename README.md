@@ -1,29 +1,23 @@
 # Titan-Mycelium
 
-Titan-Mycelium is a conceptual engineered-living-material proposal for a nutrient-dependent fungal matrix providing localized, non-structural repair.
+could a limited fungal matrix wake up near damage, help fill a crack, and then actually stop?
 
-**Live proposal:** [pinterittejeden-gif.github.io/titan-mycelium](https://pinterittejeden-gif.github.io/titan-mycelium/)
+that's Titan-Mycelium. the contradiction is what makes it interesting: the fungus needs moisture and nutrients to repair anything, but those same conditions can damage the host material.
 
-## Research question
+**read the full thing:** [pinterittejeden-gif.github.io/titan-mycelium](https://pinterittejeden-gif.github.io/titan-mycelium/)
 
-Can a fungal matrix activate only around a standardized small defect, obtain energy from a finite embedded nutrient source, provide measurable repair, and terminate without consuming or colonizing the host material?
+## where the idea stands
 
-## Evidence status
+- **what I found:** controlled fungal growth can bind lignocellulosic composites, but the result depends heavily on species, substrate, moisture, density, and processing.
+- **my leap:** move one finite pulse of growth from manufacturing into a sealed damage zone.
+- **the annoying problem:** reliable activation, host protection, termination, containment, durability, and evolutionary drift all have to work together.
+- **what I'm not claiming:** I haven't built this organism, and I'm not claiming structural-grade or autonomous building repair.
 
-- **Established:** controlled fungal growth can bind lignocellulosic composites, with performance strongly dependent on species, substrate, moisture, density, and processing.
-- **Proposed:** moving a finite pulse of controlled growth from manufacture into a sealed damage zone.
-- **Unknown:** reliable activation, host protection, termination, durability, reproductive containment, and evolutionary stability.
-- **Not claimed:** structural-grade repair, autonomous building deployment, tested defense, or a constructed organism.
+## what's in here
 
-## Repository contents
+- `index.html` has the full idea, containment gates, failure conditions, roadmap, and papers.
+- every visual is drawn in HTML/CSS, so the page does not depend on external images.
 
-- `index.html` — proposal, evidence boundaries, preliminary gates, containment controls, staged roadmap, and references.
-- Code-native visuals — original HTML/CSS diagrams; no third-party raster images are required.
+if you know fungal biology or living materials and see a hole in this, open an issue.
 
-## Feedback and citation
-
-Suggested citation: **Pinteritte. “Titan-Mycelium: Localized Fungal Matrices for Material Repair.” BIOFOLIO concept proposal, version 1.1, 2026.**
-
-## License
-
-Website code is MIT-licensed. Original writing and code-native diagrams are CC BY 4.0. See [LICENSE.md](LICENSE.md).
+the code is MIT licensed; my writing and diagrams are CC BY 4.0. details are in [LICENSE.md](LICENSE.md).

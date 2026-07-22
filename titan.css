@@ -99,6 +99,9 @@ body.theme-titan {
 .theme-titan .roadmap h3 { margin: 0; font-family: "Palatino Linotype", Palatino, Georgia, serif; font-size: 1.35rem; }
 .theme-titan .roadmap p { margin: 0; color: var(--muted); }
 .theme-titan .source-note { border: 1px solid var(--ink); border-left: 6px solid var(--accent); border-radius: 2rem 0 2rem 0; color: var(--ink); background: var(--surface); transform: none; }
+.theme-titan .inline-citation { color: var(--accent-ink); font-family: ui-monospace, monospace; font-size: .82em; font-style: normal; font-weight: 800; white-space: nowrap; }
+.theme-titan .references li { scroll-margin-top: 2rem; }
+.theme-titan .references li:target { outline: 2px solid var(--accent); outline-offset: .35rem; background: var(--surface); }
 .theme-titan .proposal-footer { color: var(--muted); }
 
 @media (max-width: 780px) {
